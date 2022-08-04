@@ -6,7 +6,7 @@ import me.wellington.academiadigital.entity.form.AvaliacaoFisicaUpdateForm;
 
 import java.util.List;
 
-public interface IAvaliacaoFisiscaService {
+public interface IAvaliacaoFisicaService {
 
     /**
      * Cria uma Avaliação Física e salva no banco de dados.

@@ -1,0 +1,26 @@
+#spring.datasource.url=jdbc:postgresql://localhost:5432/academia
+#spring.datasource.username=postgres
+#spring.datasource.password=1303
+
+#spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+#spring.jpa.hibernate.ddl-auto=none
+
+server.port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/academia?useTimezone=true&serverTimezone=UTC&useLegacyDate
+    username: postgres
+    password: 1303
+    jpa:
+      show-sql: true
+      hibernate:
+        ddl-auto: update
+      properties:
+        hibernate.format.sql: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace

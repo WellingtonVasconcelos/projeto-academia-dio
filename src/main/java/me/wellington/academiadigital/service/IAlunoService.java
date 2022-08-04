@@ -1,6 +1,7 @@
 package me.wellington.academiadigital.service;
 
 import me.wellington.academiadigital.entity.Aluno;
+import me.wellington.academiadigital.entity.AvaliacaoFisica;
 import me.wellington.academiadigital.entity.form.AlunoForm;
 import me.wellington.academiadigital.entity.form.AlunoUpdateForm;
 
@@ -27,6 +28,8 @@ public interface IAlunoService {
      */
     List<Aluno> getAll();
 
+    List<Aluno> getAll(String dataDeNascimento);
+
     /**
      * Atualiza o Aluno.
      * @param id - id do Aluno que será atualizado.
@@ -41,4 +44,6 @@ public interface IAlunoService {
      * @param id - id do Aluno que será removido.
      */
     void delete(Long id);
+
+    List<AvaliacaoFisica> getAllAvaliacaoFisicaId(Long id);
 }

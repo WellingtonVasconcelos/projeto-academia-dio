@@ -9,5 +9,4 @@ class AcademiaDigitalApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
